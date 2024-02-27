@@ -1,19 +1,28 @@
-这个 Workflow 提供两种方便的调起腾讯会议的方式，有两种用法：
+## 基本介绍
 
-### 自动模式（推荐）
+一键进入腾讯会议，提升幸福感的小工具！
 
-直接输入 `tm` 然后回车
+## 使用方法
 
-此时，会读取你的剪切板，并在剪切板里寻找腾讯会议号码，找到后，会直接调起腾讯会议并打开对应的会议室。
+像其它使用 Alfred 的 workflow 一样，可以使用快捷键或输入关键词触发。
 
-当然，快捷键也行，自己设置一下，默认是 cmd+ctrl+m.
+### 快捷键
 
-P.S. 你在用 `tm` 之前肯定得先复制一下会议信息哈。
+默认`Option+Cmd+M`，你可随时对着一串有会议号的文本按快捷键，就会自动帮你进去会议。
 
-### 手动模式
+### tm + Enter
 
-输入 `tm xxx-xxx-xxx`（带不带横岗随意）
+会议号来源剪贴板,只要剪贴板能找到会议号，就给你自动进去。
 
-也就是，你手动敲入会议号，这时也会调起腾讯会议，打开对应的会议室。
+注：需要你在用 `tm` 之前先复制一下会议信息哈。
 
-感谢 JettChen 的 Workflow 提供的灵感以及我找了许久的腾讯会议 url scheme： https://github.com/JettChenT/alfred-tencent-meeting
+### tm + 会议号
+
+示例：输入 `tm xxx-xxx-xxx`（带不带横岗随意）。
+
+注：也可以是复制的内容，脚本会去检索会议号。
+
+## TODO
+
+目前[能找到的只有快速加入](https://github.com/Tencent-Meeting/TencentMeetingSDK/blob/main/Docs/Common/TencentMeetingSDK%EF%BC%88TMSDK%EF%BC%89%E6%8E%A5%E5%8F%A3%E5%8F%82%E8%80%83%E6%96%87%E6%A1%A3.md)，期待未来官方提供更多功能（如快速创建会议/一键静音等）
+
